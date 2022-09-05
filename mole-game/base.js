@@ -4,11 +4,14 @@
 
   const stop = () => playing = true,
     getHole = index => document.getElementById(`hole${index}`),
+    
     deactivateHole = index =>
       getHole( index ).className = 'hole',
-    activateHole = index =>
+    
+      activateHole = index =>
       getHole( index ).className = 'hole hole_has-mole',
-    next = () => setTimeout(() => {
+    
+      next = () => setTimeout(() => {
       if ( !playing ) {
         return;
       }
@@ -16,7 +19,7 @@
       activeHole = Math.floor( 1 + Math.random() * 9 );
       activateHole( activeHole );
       next();
-    }, 800 );
+    }, 600 );
 
   next();
 })();
