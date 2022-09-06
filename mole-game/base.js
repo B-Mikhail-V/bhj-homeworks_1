@@ -19,7 +19,7 @@
       activeHole = Math.floor( 1 + Math.random() * 9 );
       activateHole( activeHole );
       next();
-    }, 600 );
+    }, 800 );
 
   next();
 })();

@@ -28,3 +28,12 @@
   background-size: contain;
   background-color: brown;
 }
+
+.hole_clicked_killed {
+  width: 150px;
+  height: 150px;
+  margin: 0 15px 30px;
+  background: green;
+  border-radius: 50%;
+}
+
